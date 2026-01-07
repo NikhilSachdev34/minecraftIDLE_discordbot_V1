@@ -1,0 +1,52 @@
+//id(0) //coordx(1) //coordy(2) //pickaxe tier(3) //stone(4) //mine cooldown(5) //axe tier(6) //wood(7) //axe cooldown(8) 
+//sword tier(9) //string(10) //combat cooldown(11) //iron(12) //quadrant(13) //redstone(14) //basic compass(15)
+//magic dust(16) //raid find cooldown(17) //compass(18) //enchanted compass(19) //gunpowder(20) //rottenflesh(21)
+//slime ball(22) //pufferish(23) //blaze rod(24) //enderpearl(25) //phantom membrane(26) //magma cream(27) 
+//underwater potion(28) //nether potion(29) //end potion(30) //void potion(31) //raid cooldown(32) //raided(33)
+//avg tool tier(34) //random coordx(35) //random coordy(36)
+
+if avg tool tier <= 4 raid 5%
+if avg tool tier >= 5 raid 10%
+
+10% Epic Drop
+25% Very Rare Drop
+33% Rare Drop
+50% Uncommon Drop
+66% Common Drop
+
+All:
+10% magic dust
+Sword:
+66% recurDrops(0.25,1) pufferish
+recurDrops(4,8) string
+recurDrops(2,4) gunpowder
+recurDrops(1,1) rottenflesh
+recurDrops(4,6) slime ball
+33% recurDrops(0.5,1) blaze rod
+50% recurDrops(0.5,1) ender pearl
+25% recurDrops(0.25,1) phantom membrane
+
+magmaCream x8
+8 slime ball 1 blaze rod
+
+basicCompass
+64 string 1 magic dust
+
+compass
+64 string 16 iron 1 magic dust
+
+enchantedCompass
+32 iron 32 redstone 1 magic dust
+
+underwaterPotion
+2 pufferish 8 rottenflesh
+
+netherPotion
+4 magma cream 16 rottenflesh 1 blaze rod
+
+endPotion
+1 phantom membrane 1 blaze rod 4 ender pearl
+
+voidPotion
+2 phantom membrane 2 blaze rod 8 ender pearl
+
